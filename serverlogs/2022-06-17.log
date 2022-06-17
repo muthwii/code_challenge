@@ -2716,3 +2716,25 @@ TypeError: can only concatenate str (not "NoneType") to str
 [2022-06-17 13:07:27,076:log_message:154] "POST /api/customer/new HTTP/1.1" 401 63
 [2022-06-17 13:07:47,701:trigger_reload:217] /var/www/html/django/tests/code_challenge/user_management/views.py changed, reloading.
 [2022-06-17 13:07:48,238:run_with_reloader:597] Watching for file changes with StatReloader
+[2022-06-17 13:17:04,063:run_with_reloader:597] Watching for file changes with StatReloader
+[2022-06-17 13:17:07,282:log_message:154] "POST /api/customer/add/address HTTP/1.1" 201 68
+[2022-06-17 13:17:10,453:log_message:154] "POST /api/customer/add/address HTTP/1.1" 201 68
+[2022-06-17 13:17:11,873:log_message:154] "POST /api/customer/add/address HTTP/1.1" 201 68
+[2022-06-17 13:17:54,215:run_with_reloader:597] Watching for file changes with StatReloader
+[2022-06-17 13:17:56,826:log_message:154] "POST /api/customer/add/address HTTP/1.1" 201 68
+[2022-06-17 13:17:58,785:log_message:154] "POST /api/customer/add/address HTTP/1.1" 201 68
+[2022-06-17 13:18:44,935:trigger_reload:217] /var/www/html/django/tests/code_challenge/user_management/views.py changed, reloading.
+[2022-06-17 13:18:45,666:run_with_reloader:597] Watching for file changes with StatReloader
+[2022-06-17 13:18:50,762:run_with_reloader:597] Watching for file changes with StatReloader
+[2022-06-17 13:18:56,620:log_message:154] "POST /api/customer/add/address HTTP/1.1" 201 68
+[2022-06-17 13:25:42,069:run_with_reloader:597] Watching for file changes with StatReloader
+[2022-06-17 13:25:47,080:log_message:154] "POST /api/customer/add/address HTTP/1.1" 201 68
+[2022-06-17 13:26:03,176:log_response:222] Unauthorized: /api/customer/add/address
+[2022-06-17 13:26:03,177:log_message:154] "POST /api/customer/add/address HTTP/1.1" 401 61
+[2022-06-17 13:27:37,870:log_response:222] Unauthorized: /api/customer/new
+[2022-06-17 13:27:37,871:log_message:154] "POST /api/customer/new HTTP/1.1" 401 50
+[2022-06-17 13:27:57,254:log_message:154] "POST /api/customer/add/address HTTP/1.1" 201 68
+[2022-06-17 13:28:22,248:trigger_reload:217] /var/www/html/django/tests/code_challenge/user_management/views.py changed, reloading.
+[2022-06-17 13:28:22,769:run_with_reloader:597] Watching for file changes with StatReloader
+[2022-06-17 13:28:23,773:log_message:154] "POST /api/customer/add/address HTTP/1.1" 200 68
+[2022-06-17 13:28:32,637:log_message:154] "POST /api/customer/add/address HTTP/1.1" 200 68

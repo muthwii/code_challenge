@@ -139,11 +139,23 @@ def create_address(request):
 
         try:
             customer = Customers.objects.get(email_address=email_address)
-            address = Residential_address(
-                country=country, city=city, state=state, zip=zip, email_address=email_address, customer_id=customer.id)
-            address.save()
+            print(customer.id)
+            try:
+                address = Residential_address.objects.get(
+                    customer_id=customer.id)
+                address.country = country
+                address.city = city
+                address.state = state
+                address.zip = zip
+                address.save()
+                return Response({'success': True, 'code': HTTP_200_OK, 'message': 'Address updated successfully'}, status=HTTP_200_OK)
 
-            return Response({'success': True, 'code': HTTP_201_CREATED, 'message': 'Address created successfully'}, status=HTTP_201_CREATED)
+            except:
+                address = Residential_address(
+                    country=country, city=city, state=state, zip=zip, email_address=email_address, customer_id=customer.id)
+                address.save()
+
+                return Response({'success': True, 'code': HTTP_201_CREATED, 'message': 'Address created successfully'}, status=HTTP_201_CREATED)
 
         except ObjectDoesNotExist:
             return Response({'success': True, 'code': HTTP_401_UNAUTHORIZED, 'message': 'Customer doesnt exist'}, status=HTTP_401_UNAUTHORIZED)
